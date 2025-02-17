@@ -12,7 +12,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/create-new-post" className="active">
+          <NavLink to="/admin-dashboard" className="active">
             Create Post
           </NavLink>
         </li>
