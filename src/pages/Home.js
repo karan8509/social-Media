@@ -1,16 +1,15 @@
 import React, { useContext } from "react";
 import { ContextProvideData } from "../store/SliceAdminData";
-import "../style/home.css"; // ✅ CSS ko import karo
+import "../style/home.css"; 
 
 export const Home = () => {
   const { uploadData , deleteProduct } = useContext(ContextProvideData);
 
-  const handleDelete = (del) => {
-    deleteProduct(del)
+  const handleDelete = (index) => {
+    deleteProduct(index)
   }
   return (
     <div className="home-container">
-      <h1 className="home-title">HI, I AM HOME PAGE</h1>
       <div className="uploaded-items">
         {uploadData.length > 0 ? (
           uploadData.map((data, index) => (
