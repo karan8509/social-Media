@@ -10,6 +10,7 @@ export const SliceAdminData = ({ children }) => {
   const [uploadData, setUploadData] = useState([]);
   const addData = (file, title, message, price) => {
     const newData = { file, title, message, price };
+    console.log("change" , message)
     setUploadData([...uploadData, newData]);
   };
 

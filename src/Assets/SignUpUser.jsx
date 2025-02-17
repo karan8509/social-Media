@@ -36,6 +36,7 @@ export const SignUpUser = () => {
     const title = UploadTitle.current.value;
     const message = UpdoadMessage.current.value;
     const price = UploadPrice.current.value;
+    console.log("--->"  , message)
     addData(newCreteUrl , title , message , price )
   };
 

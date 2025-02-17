@@ -16,7 +16,7 @@ export const Home = () => {
             <div className="item-card" key={index}>
               <img src={data.file} alt="Uploaded" />
               <p><strong>Title:</strong> {data.title}</p>
-              <p><strong>Description:</strong> {data.description}</p>
+              <p><strong>Description:</strong> {data.message}</p>
               <p className="item-price"><strong>Price:</strong> ₹{data.price}</p>
               <button onClick={() => handleDelete(index)}>remove</button>
             </div>

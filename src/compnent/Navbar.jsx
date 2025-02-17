@@ -4,7 +4,7 @@ import "../App.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2>logo my</h2>
+      <h2></h2>
       <ul>
         <li>
           <NavLink to="/" className="active">
